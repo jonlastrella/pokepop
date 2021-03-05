@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  background-color: #e2dbac;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.logo-container h1 {
+  font-family: 'Carter One';
+  letter-spacing: 5px;
+}
+.logo-container {
+  flex: 2;
+  margin-left: 5%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  color: whitesmoke;
+}
+.order {
+  background-color: #75c529;
+  padding: 5px 15px;
+  color: whitesmoke;
+}
+.order:hover {
+  text-decoration: underline;
+}
+/* mobile nav */
+.mobile-nav {
+  display: none;
+  text-align: center;
+}
+.mobile-nav ul li {
+  border: 1px solid black;
+  padding: 10px;
+}
+.mobile-nav ul li a {
+  color: black;
+}
+.name {
+  font-family: 'Carter One';
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: contents;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  nav ul li {
+    margin: 0 15px;
+  }
+}
