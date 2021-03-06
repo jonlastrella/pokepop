@@ -195,6 +195,25 @@ nav ul li a:hover {
   .bowl-p {
     flex-direction: column;
   }
+  .musubi ul {
+    flex-direction: column;
+  }
+  .musubi ul li {
+    margin: 10px 0;
+  }
+  .testimonials {
+    flex-direction: column;
+  }
+  .reviewer {
+    width: 100%;
+  }
+  .bowl h2 {
+    text-align: center;
+  }
+  .location,
+  .hours {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -203,19 +222,37 @@ nav ul li a:hover {
   .mobile-nav {
     display: contents;
   }
-  .intro,
-  .build,
-  .menu {
-  }
   .bowl ul {
     margin: 0 10px;
   }
+  .bowl-p {
+    flex-direction: column;
+  }
+  .bowl h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .musubi ul {
+    flex-direction: column;
+  }
+  .musubi ul li {
+    margin: 10px 0;
+  }
+  .testimonials img {
+    height: 200px;
+  }
 }
 @media only screen and (max-width: 1024px) {
+  .bowl h2 {
+    text-align: center;
+  }
   nav ul li {
     margin: 0 15px;
   }
   .bowl ul {
     margin: 0 10px;
+  }
+  .musubi ul li {
+    margin: 0 5px;
   }
 }
