@@ -19,7 +19,7 @@ ul {
 }
 .logo-container {
   flex: 2;
-  margin-left: 5%;
+  margin-left: 15%;
 }
 nav {
   display: flex;
@@ -32,7 +32,7 @@ nav ul {
   align-items: center;
   flex: 1;
   justify-content: space-between;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 nav ul li a {
   color: black;
@@ -63,6 +63,139 @@ nav ul li a:hover {
 .name {
   font-family: 'Carter One';
 }
+.intro {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+.intro img {
+  width: 100%;
+  margin-top: 20px;
+}
+/* menu */
+.build {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+.build p {
+  text-decoration: underline;
+}
+.menu {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.bowl,
+.bowl-p {
+  text-align: center;
+}
+.bowl h2 {
+  margin-bottom: 20px;
+  text-align: start;
+}
+.bowl ul li,
+.bowl-p ul li {
+  border: 1px solid black;
+  padding: 10px;
+  /* border-radius: 20px; */
+  margin: 10px 0;
+  background-color: whitesmoke;
+}
+.bowl-p {
+  display: flex;
+}
+.bowl-p ul li {
+  margin: 10px;
+}
+.salmonbowl {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.musubi {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+.musubi ul {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.musubi ul li {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+/* testimonials */
+.testimonials {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.reviewer {
+  width: 30%;
+  text-align: center;
+}
+.reviewer img {
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  margin: 20px 0;
+}
+.review {
+  margin-top: 10px;
+}
+/* footer */
+.footer {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.footer,
+.location,
+.hours,
+.location p,
+.hours p {
+  background-color: #47342d;
+  color: whitesmoke;
+}
+.location,
+.hours {
+  margin: 0 100px;
+}
+.loc {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.number {
+  margin-top: 10px;
+}
+/* media queries */
+@media only screen and (max-width: 375px) {
+  .build p {
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 18px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .bowl-p {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 768px) {
   nav {
     display: none;
@@ -70,9 +203,19 @@ nav ul li a:hover {
   .mobile-nav {
     display: contents;
   }
+  .intro,
+  .build,
+  .menu {
+  }
+  .bowl ul {
+    margin: 0 10px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   nav ul li {
     margin: 0 15px;
+  }
+  .bowl ul {
+    margin: 0 10px;
   }
 }
